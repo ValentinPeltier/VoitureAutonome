@@ -20,10 +20,10 @@ void loop() {
     voitureActive = !voitureActive;
 
     if(voitureActive) {
-      digitalWrite(DOUT_LED, HIGH);
+      digitalWrite(LED_PIN, HIGH);
     }
     else {
-      digitalWrite(DOUT_LED, LOW);
+      digitalWrite(LED_PIN, LOW);
       Arret();
       RegardeToutDroit();
     }

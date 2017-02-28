@@ -1,10 +1,10 @@
 
 float DistanceDuMur() {
-  digitalWrite(DOUT_ULTRASONIC_TRIG, HIGH);
+  digitalWrite(ULTRASONIC_TRIG_PIN, HIGH);
   delayMicroseconds(10);
-  digitalWrite(DOUT_ULTRASONIC_TRIG, LOW);
+  digitalWrite(ULTRASONIC_TRIG_PIN, LOW);
   
-  return pulseIn(DIN_ULTRASONIC_ECHO, HIGH) / 58.0f;
+  return pulseIn(ULTRASONIC_ECHO_PIN, HIGH) / 58.0f;
 }
 
 bool LaVoieEstLibre() {

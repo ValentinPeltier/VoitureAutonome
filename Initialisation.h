@@ -1,22 +1,22 @@
 
 void Initialisation() {  
-  pinMode(DOUT_LED, OUTPUT);
-  digitalWrite(DOUT_LED, LOW);
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW);
   
-  pinMode(DIN_BOUTON, INPUT);
+  pinMode(BOUTON_PIN, INPUT);
   
-  pinMode(DOUT_ULTRASONIC_TRIG, OUTPUT);
-  pinMode(DIN_ULTRASONIC_ECHO, INPUT);
+  pinMode(ULTRASONIC_TRIG_PIN, OUTPUT);
+  pinMode(ULTRASONIC_ECHO_PIN, INPUT);
   
-  digitalWrite(DOUT_ULTRASONIC_TRIG, LOW);
+  digitalWrite(ULTRASONIC_TRIG_PIN, LOW);
   
-  pinMode(D0UT_MOTEUR_GAUCHE, OUTPUT);
-  pinMode(D0UT_MOTEUR_DROIT, OUTPUT);
+  pinMode(MOTEUR_GAUCHE_PIN, OUTPUT);
+  pinMode(MOTEUR_DROIT_PIN, OUTPUT);
   
-  digitalWrite(D0UT_MOTEUR_GAUCHE, LOW);
-  digitalWrite(D0UT_MOTEUR_DROIT, LOW);
+  digitalWrite(MOTEUR_GAUCHE_PIN, LOW);
+  digitalWrite(MOTEUR_DROIT_PIN, LOW);
   
-  servo.attach(PWM_SERVO);
+  servo.attach(SERVO_PIN);
   
   RegardeToutDroit();
 }

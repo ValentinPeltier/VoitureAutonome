@@ -2,11 +2,11 @@
 bool changerEtat() {
   bool r = false;
   
-  if(digitalRead(DIN_BOUTON) == HIGH && precedent == false) {
+  if(digitalRead(BOUTON_PIN) == HIGH && precedent == false) {
     r = true;
   }
 
-  if(digitalRead(DIN_BOUTON) == HIGH) {
+  if(digitalRead(BOUTON_PIN) == HIGH) {
     precedent = true;
   }
   else {
